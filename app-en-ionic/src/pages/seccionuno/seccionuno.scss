@@ -1,0 +1,32 @@
+page-seccionuno {
+    
+    .bg-image
+    
+    {
+        opacity: 0.5;
+        background-image:url('../../assets/imgs/moove-logo.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%; 
+        
+    }
+    .botonrutas{
+
+        height: 35%;
+        width: 50%;
+        background: linear-gradient(to right, #FDEB8F, #FFB846);
+        margin-left: 30%;
+        margin-top: 20%;
+
+    }
+
+    .botondescubre{
+        height: 35%;
+        width: 50%;
+        background: linear-gradient(to right, #FFC3A0, #FFAFBD);
+        margin-left: 30%;
+
+    }
+
+}
