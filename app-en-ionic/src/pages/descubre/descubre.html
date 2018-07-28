@@ -6,25 +6,38 @@
 -->
 <ion-header>
   <ion-navbar color="yellow">
-          <button ion-button icon-only menuToggle>
-            <ion-icon name="menu"></ion-icon>
-          </button>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
       
-          <ion-title>
-DESCUBRE          </ion-title>
+    <ion-title>
+      DESCUBRE
+    </ion-title>
       
-          <ion-buttons end>
-            <button ion-button icon-only>
-              <ion-icon name="menu"></ion-icon>
-            </button>
-          </ion-buttons>
-        </ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
 </ion-header>
 
-
 <ion-content padding class="bg-image">
-    <h3>Enfoca la tarjeta tu llave para descubrir</h3>
+  <ion-row>
+    <ion-col text-center>
+      <h3>Enfoca la tarjeta tu llave para descubrir</h3>
+    </ion-col>
+  </ion-row>
 
+  <iframe src="../../assets/aframe-ar.html"></iframe>
+
+  <ion-row>
+    <ion-col text-center>
+      <button ion-button icon-start block round (click)="foto()">
+        <ion-icon name="logo-python"></ion-icon>
+        Toma una Foto
+      </button>
+      <p align="center"><img src="{{ myphoto }}"></p>
+    </ion-col>
+  </ion-row>
 </ion-content>
-<button class="foto" ion-button block round (click)="foto()"><br>Toma una Foto</button>
-<p align="center"><img src="{{ myphoto}}"></p>

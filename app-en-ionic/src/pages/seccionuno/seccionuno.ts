@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { RutasPage } from '../rutas/rutas';
 import { DescubrePage } from '../descubre/descubre';
 
@@ -18,14 +18,15 @@ import { DescubrePage } from '../descubre/descubre';
 })
 export class SeccionunoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
   aRutas(){
     this.navCtrl.push(RutasPage);
   }
   aDescubre(){
-    this.navCtrl.push(DescubrePage);
+    let arLauncher = this.modalCtrl.create('DescubrePage');
+    arLauncher.present();
   }
 
   ionViewDidLoad() {
